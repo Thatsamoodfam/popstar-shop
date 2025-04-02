@@ -1,0 +1,149 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #df6da9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header Styling */
+header {
+    background: #efb6d4;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+	font-size: 16px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+	 text-shadow: 0 0 10px rgba(209, 37, 37, 0.8), 0 0 20px rgba(209, 37, 37, 0.7); /* Pink glow */
+    color: #fff; /* Optionally change the text color to white for more contrast */
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Main Content */
+main {
+    margin: auto;
+	display: block;
+	min-height: 175px;
+}
+
+main h2 {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+
+.image-scroll-container {
+	display: flex;
+	overflow-x: auto;
+	white-space: nowrap;
+	padding: 10px 0;
+	width: 80%;
+	white-space: nowrap;
+
+	justify-content: center;
+	margin: 0 auto;
+}
+  
+.image-scroll-container img { 
+	margin-right: 10px;
+	height: 135px;
+	width: 120px;
+	object-fit: cover;
+}
+.new-image-container {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	flex-direction: row;
+	align-items: center;
+	margin-top: 20px;
+	
+}
+.new-image-container img{
+	height: 165px;
+	width: 140px;
+	object-fit: cover;
+	border: 4px solid #333;
+	border-radius: 8px;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #960018;
+    margin-top: 10px;
+    text-align: center;
+    display: block; /* Ensure it's a block element, takes up its own space */
+    clear: both; /* Prevent it from affecting other elements */
+    width: 100%;  /* Make sure it doesn't stretch beyond its container */
+}
+
+/* Hover effect for images in the image scroll container */
+.image-scroll-container img:hover {
+    box-shadow: 0 0 10px 5px rgba(24, 154, 211, 0.7); /* cool blue glow */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+.new-image-container img:hover {
+	 box-shadow: 0 0 10px 5px rgba(24, 154, 211, 0.7); /* cool blue glow */
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+.new-image-container img, .image-scroll-container img {
+    height: auto; /* Prevent images from stretching or overflowing */
+    max-width: 100%; /* Ensure they are responsive and contained */
+}
+ 
+section {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    background: #960018; /* Red background color */
+    color: #fff; /* White text */
+    padding: 20px 0; /* Adequate padding to create a bar effect */
+    margin-top: 20px; /* Spacing between content and footer */
+    position: relative; /* Ensure it doesn't overlap content */
+    width: 100%; /* Make sure it takes full width */
+	bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}

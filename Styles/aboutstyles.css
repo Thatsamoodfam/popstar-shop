@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #df6da9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    background: #efb6d4;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Flexbox for better alignment */
+    justify-content: center; /* Center the nav items */
+    margin-top: 10px;
+}
+
+nav ul li {
+    margin: 0 20px; /* Space out the nav items */
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none; /* Remove the underline for a cleaner look */
+    font-weight: bold;
+    font-size: 16px; /* Slightly larger text for readability */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition on hover */
+}
+
+nav ul li a:hover {
+	 text-shadow: 0 0 10px rgba(209, 37, 37, 0.8), 0 0 20px rgba(209, 37, 37, 0.7); /* Pink glow */
+    color: #fff; /* Optionally change the text color to white for more contrast */
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+#aboutus h2{
+	margin-bottom: 10px;
+}
+#aboutus p{
+	margin-bottom: 10px;
+}
+
+#origins h2 {
+	margin-bottom: 10px;
+	
+}
+
+#home {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 50vh;
+	text-align: center;
+	background-color: #f87da;
+	border-radius: 8px;
+	padding: 10px;
+}
+
+#home h2 {
+	margin-bottom: 10px;
+}
+
+#home a {
+	color: #960018; /* Color for the link */
+    font-size: 20px; /* Adjust font size for the link */
+    font-weight: bold;
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth transition effect */
+}
+
+#home a:hover {
+	color: #f1a7a6; /* Color change on hover */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    background: #960018; /* Red background color */
+    color: #fff; /* White text */
+    padding: 20px 0; /* Adequate padding to create a bar effect */
+    margin-top: 20px; /* Spacing between content and footer */
+    position: relative; /* Ensure it doesn't overlap content */
+    width: 100%; /* Make sure it takes full width */
+	bottom: 0;
+}

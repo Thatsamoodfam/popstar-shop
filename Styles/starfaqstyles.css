@@ -1,0 +1,40 @@
+/* ================================================
+	FAQ Section Styles
+	=============================================== */
+	
+#faq-container {
+ max-width: 600px;
+ margin: 20px auto;
+ background: #fff;
+ padding: 15px;
+ border-radius: 8px;
+ box-shadow: 0px 0px 10px rgba(0,0,0, 0.1);
+ }
+ 
+ .faq { margin-bottom: 15px;
+		border bottom: 1px solid #ddd;
+		padding-bottom: 10px;
+}
+
+.question { 
+	font-weight: bold;
+	cursor: pointer;
+	backgroudn: #007bff;
+	color: white;
+	padding: 10x;
+	border-radius: 5px;
+	transition: background 0.3s;
+}
+
+.question:hover {
+	background: #0056b3;
+}
+
+.answer { display: none;
+	margin-stop: 5px;
+	padding: 10px;
+	background: #e9ecef;
+	border-radius: 5px;
+	}
+	
+	
